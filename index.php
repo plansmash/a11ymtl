@@ -18,7 +18,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main container">
 			<section id="about">
-				<h2 class="text-center text-uppercase text-secondary mb-0">About a11yMTL</h2>
+				<h2 class="text-secondary mb-0">About a11yMTL</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed placeat vero aperiam optio, veritatis laudantium consectetur obcaecati, voluptas beatae temporibus ullam iusto odit est praesentium quae, quam deleniti similique dicta.</p>
 			</section>
 
@@ -31,7 +31,7 @@ get_header();
 
 
 <section class="event" id="events">
-	<h2 class="text-center text-uppercase text-secondary mb-0">Events</h2>
+	<h2 class="text-secondary mb-0">Events</h2>
 	<div class="container">
 		<div class="row">
 
@@ -43,7 +43,7 @@ $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
         <section class="col-md-6 col-lg-4">
-			<a class="event-item d-block mx-auto" href="#event-modal-1">
+			<a class="event-item d-block mx-auto" href="<?php the_permalink() ?>">
 				<div class="event-item-caption d-flex position-absolute h-100 w-100">
 				<div class="event-item-caption-content my-auto w-100 text-center text-white">
 				</div>
@@ -69,7 +69,7 @@ endwhile;
 </section>
 
 			<section id="contact">
-				<h2 class="text-center text-uppercase text-secondary mb-0">Contact us</h2>
+				<h2 class="text-secondary mb-0">Contact us</h2>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt id assumenda unde, suscipit fuga perspiciatis commodi, sed necessitatibus quidem minima ipsam corrupti neque, facilis aspernatur non nobis perferendis numquam asperiores?</p>
 			</section>
 		</main><!-- #main -->
