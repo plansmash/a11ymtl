@@ -38,7 +38,7 @@ get_header();
 
 <?php
 
-$args = array( 'post_type' => 'event', 'posts_per_page' => 10 );
+$args = array( 'post_type' => 'event', 'posts_per_page' => 6 );
 $loop = new WP_Query( $args );
 while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
